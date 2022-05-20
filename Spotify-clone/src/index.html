@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Escutar muda tudo - Spotify</title>
+</head>
+<body id="body">
+    <header class="background" id="header">
+        <div class="header">
+            <div class="logo">
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 850px)" srcset="../img/spotify-logo-p.png">
+                        <img src="../img/spotify-logo.png" alt="Spotify-logo">
+                    </picture>
+                </a>
+            </div>
+            <div id="nav" class="nav">
+                <nav>
+                    <a id="a-header" class="header-a" href="#">Premium</a>
+                    <a id="a-header" class="header-a" href="#">Suporte</a>
+                    <a id="a-header" class="header-a" href="#">Baixar</a>
+                    <label for="|">|</label>
+                    <a id="a-header" href="#">Inscrever-se</a>
+                    <a id="a-header" href="#">Entrar</a>
+                </nav>
+            </div>
+            <div id="menu-nav" class="menu">
+                <a onclick="abrirMenu()" href="#">
+                    <picture>
+                        <source media="(max-width: 850px)" srcset="../img/menu-p.png">
+                        <img src="../img/menu.png" alt="menu">
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div id="menu-bar" class="menu-bar">
+        <div class="exit">
+            <a onclick="fecharMenu()" href="#">
+                <img src="../img/exit.png" alt="exit">
+            </a>
+        </div>
+        <ul id="ul-header">
+            <li id="li-header">
+                <a id="a-header" class="header-a" href="#">
+                    <h1>Premium</h1>
+                </a>
+            </li>
+            <li id="li-header">
+                <a id="a-header" class="header-a" href="#">
+                    <h1>Suporte</h1>
+                </a>
+            </li>
+            <li id="li-header">
+                <a id="a-header" class="header-a" href="#">
+                    <h1>Baixar</h1>
+                </a>
+            </li>
+            <li id="li-header">
+                <a id="a-header" class="line" href="#">__</a>
+            </li>
+            <li id="li-header">
+                <a id="a-header" href="#" class="conta-menu">
+                    <h2>Inscrever-se</h2>
+                </a>
+            </li>
+            <li id="li-header">
+                <a id="a-header" href="#" class="conta-menu">
+                    <h2>Entrar</h2>
+                </a>
+            </li>
+        </ul>
+        <div class="logo-menu">
+            <a href="#">
+                <picture>
+                    <source media="(max-width: 850px)" srcset="../img/spotify-logo-p.png">
+                    <img src="../img/spotify-logo.png" alt="Spotify-logo">
+                </picture>
+            </a>
+        </div>
+    </div>
+    <main class="background">
+        <div id="main">
+            <div id="title">
+                <h1>Escutar muda tudo</h1>
+            </div>
+            <div id="p">
+                Milhões de músicas e podcasts para explorar. E nem precisa de cartão de crédito.
+            </div>
+            <div id="button">
+                <input type="button" value="BAIXE O SPOTIFY FREE">
+            </div>
+        </div>
+    </main>
+    <footer class="background">
+        <div id="div-footer">
+            <div id="logo-footer">
+                <picture>
+                    <source media="(max-width: 850px)" srcset="../img/spotify-logo-p.png">
+                    <img src="../img/spotify-logo.png" alt="Spotify-logo">
+                </picture>
+            </div>
+            <div class="list-footer">
+                <ul class="ul-footer">
+                    <li class="li-title-footer">EMPRESA</li>
+                    <li class="li-footer">
+                        <a class="header-a" href="#">Sobre</a>
+                    </li>
+                    <li class="li-footer">
+                        <a class="header-a" href="#">Empregos</a>
+                    </li>
+                    <li class="li-footer">
+                        <a class="header-a" href="#">For The Record</a>
+                    </li>
+                </ul>
+                <ul class="ul-footer">
+                    <li class="li-title-footer">COMUNIDADES</li>
+                    <li class="li-footer">
+                        <a class="header-a" href="#">Para Artistas</a>
+                    </li>
+                    <li class="li-footer">
+                        <a class="header-a" href="#">Desenvolvedores</a>
+                    </li>
+                    <li class="li-footer">
+                        <a class="header-a" href="#">Publicidade</a>
+                    </li>
+                    <li class="li-footer">
+                        <a class="header-a" href="#">Investidores</a>
+                    </li class="li-footer">
+                    <li class="li-footer">
+                        <a class="header-a" href="#">Fornecedores</a>
+                    </li>
+                </ul>
+                <ul class="ul-footer">
+                    <li class="li-title-footer">LINKS ÚTEIS</li>
+                    <li class="li-footer">
+                        <a class="header-a" href="#">Suporte</a>
+                    </li>
+                    <li class="li-footer">
+                        <a class="header-a" href="#">Player da Web</a>
+                    </li>
+                    <li class="li-footer">
+                        <a class="header-a" href="#">Aplicativo móvel grátis</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="div-icon-footer">
+                <div class="icon-footer">
+                    <div class="icon-img">
+                        <a href="#">
+                            <img src="../img/instagram-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="icon-footer">
+                    <div class="icon-img">
+                        <a href="#">
+                            <img src="../img/twitter-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="icon-footer">
+                    <div class="icon-img">
+                        <a href="#">
+                            <img src="../img/facebook-icon.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="info" id="country">
+            <a href="#">&#xf0ac; Brasil</a>
+        </div>
+        <div class="info">
+                <ul>
+                    <li>
+                        <a href="#">Legal</a>
+                    </li>
+                    <li>
+                        <a href="#">Centro de Privacidade</a>
+                    </li>
+                    <li>
+                        <a href="#">Política de privacidade</a>
+                    </li>
+                    <li>
+                        <a href="#">Cookies</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre anúncios</a>
+                    </li>
+                </ul>
+            <span id="copy">&copy; 2021 Spotify AB</span>
+        </div>
+    </footer>
+    <script src="responcive.js"></script>
+</body>
+</html>

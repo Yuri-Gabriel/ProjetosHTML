@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+$fontFamily: 'Roboto', sans-serif;
+$Orange: #D2872C;
+$Grey: #766F68;
+
+
+@mixin FlexBox($justify-content: center, $align-items: center) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fontFamily;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+header {
+    @include FlexBox($justify-content: space-between);
+    padding: 0px 50px;
+    height: 80px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.479);
+    h2 {
+        color: $Orange;
+    }
+    nav {
+        width: 230px;
+        @include FlexBox($justify-content: space-between);
+        a {
+            text-decoration: none;
+            color: $Grey;
+        }
+        a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
+    img {
+        width: 60px;
+    }
+    #imgMenu {
+        display: none;
+        cursor: pointer;
+    }
+    #imgMenu:hover ~ #menuBar {
+        transform: translateX(0%);
+    }
+    #menuBar:hover {
+        transform: translateX(0%);
+    }
+    #menuBar {
+        transform: translateX(100%);
+        transition: 0.5s;
+        display: none;
+        background-color: rgba(158, 101, 32, 0.767);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        z-index: 2;
+        padding-top: 80px;
+        ul {
+            width: 100%;
+            li {
+                font-size: 1.5em;
+                
+                list-style: none;
+                margin: 0;
+                padding: 30px 0px;
+                width: 100%;
+                a {
+                    padding-left: 10px;
+                    font-weight: 400;
+                    color: #ffffff;
+                }
+            }
+            li:hover {
+                background-color: rgba(124, 79, 25, 0.767);
+            }
+        }
+    }
+}
+
+
+section {
+    margin: auto;
+    margin-top: 20px;
+
+    padding: 0px 30px;
+
+    max-width: 850px;
+    height: 400px;
+
+    color: $Grey;
+
+    position: relative;
+
+    @include FlexBox($justify-content: space-between);
+
+    div {
+        height: 400px;
+        position: absolute;
+        z-index: 2;
+
+
+        h1 {
+            font-size: 3em;
+            max-width: 500px;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 30px 0px;
+            width: 300px;
+        }
+        button {
+            border: none;
+            height: 40px;
+            width: 150px;
+            font-size: 1.3em;
+            background-color: $Orange;
+            color: #fff;
+            font-weight: 500;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b97725;
+        }
+    }
+    img {
+        position: absolute;
+        z-index: 1;
+        right: 40px;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section{
+        img {
+            width: 500px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section{
+        img {
+            width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    section{
+        div {
+            p {
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 630px) {
+
+    header {
+        #notMenuBar {
+            display: none;
+        }
+        #imgMenu, #menuBar {
+            display: block;
+        }
+    }
+
+    section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 550px;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            p {
+                width: 300px;
+            }
+        }
+        img {
+            position: relative;
+            z-index: 1;
+            right: 0;
+            width: 400px;
+        }
+    }
+}

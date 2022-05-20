@@ -1,0 +1,371 @@
+@font-face {
+    font-family: "Circular-bold";
+    src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Circular-medium";
+    src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Circular-light";
+    src: url("../fonts/CircularStd-Light.otf") format("opentype");
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+header {
+    height: 60px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.header {
+    height: 38px;
+    padding: 10px;
+}
+
+.logo {
+    position: absolute;
+    left: 65px;
+    top: 20px;
+}
+
+.nav, .logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav {
+    height: 20px;
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    font-family: "Circular-bold";
+}
+
+nav > a, nav > label{
+    margin: 0px 15px;
+    color: white;
+    font-size: 15.8px;
+}
+
+
+.header-a:hover, .conta-menu:hover, a > h2:hover, .info a:hover {
+    color: #1ED760;
+}
+
+.header-a {
+    color: white;
+    text-decoration: none;
+}
+
+.conta-menu {
+    color: rgb(217, 218, 220);
+    font-family: "Circular-light";
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    right: 50px;
+}
+
+img#menu {
+    width: 40px;
+}
+
+.menu-bar {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    width: 440px;
+    margin-top: -20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 999;
+}
+
+@media screen and (max-width: 450px) {
+    .menu-bar {
+        width: 100%;
+    }
+}
+
+.exit {
+    width: 20px;
+    position: fixed;
+    right: 40px;
+    top: 20px;
+}
+
+.exit > a > img {
+    height: 20px;
+}
+
+ul#ul-header {
+    margin-top: 50px;
+    font-family: "Circular-bold";
+}
+
+li#li-header {
+    list-style: none;
+    margin: 15px 40px;
+    font-size: 18px;
+}
+
+a#a-header {
+    text-decoration: none;
+}
+
+.line {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 30px 0px;
+}
+
+a > h2 {
+    display: block;
+    position: relative;
+    top: 10px;
+}
+
+.logo-menu {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+}
+
+main {
+    height: 130vh;
+    background-color: #2941AB;
+    background-image: url("https://www-growth.scdn.co/static/home/bursts-mobile.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 990px;
+    color: #1ED760;
+    border: 1px solid #2941AB;
+}
+
+div#main {
+    height: 129.5vh;
+    text-align: center;
+}
+
+div#title {
+    font-family: "Circular-bold";
+    font-size: 70px;
+    width: 900px;
+    margin: 130px auto 10px auto;
+    padding: 40px;
+}
+
+div#p {
+    width: 700px;
+    padding: 10px;
+    margin: 0px auto 10px auto;
+}
+
+div#button {
+    width: 200px;
+    margin: 0px auto 10px auto;
+    padding: 10px;
+}
+
+div#button > input {
+    border-radius: 30px;
+    height: 45px;
+    width: 220px;
+    font-family: "Circular-bold";
+    color: #2941AB;
+    background-color: #1ED760;
+    border-color: #1ED760;
+}
+
+@media screen and (max-width: 1210px) {
+    main {
+        background-size: 1100px;
+    }
+
+    div#title {
+        padding: 0px;
+        font-size: 50px;
+        width: 635px;
+    }
+
+    div#p {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    div#title {
+        padding: 0px;
+        margin-top: 160px;
+        font-size: 25px;
+        width: 350px;
+    }
+
+    div#p {
+        width: 299px;
+    }
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: black;
+    min-height: 500px;
+    padding: 10px;
+}
+
+div#div-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 72px;
+}
+
+.list-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+}
+
+div#logo-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-left: 25px;
+    
+}
+
+.ul-footer {
+    list-style: none;
+    width: 200px;
+    margin: 0px 0px 60px 30px;
+
+}
+
+.li-title-footer {
+    font-size: 0.8em;
+    color: rgb(177, 177, 179);
+    padding: 15px 0px;
+    font-family: "Circular-bold";
+}
+
+.li-footer {
+    color: white;
+    padding: 15px 0px;
+    font-family: "Circular-medium";
+}
+
+.a-footer {
+    color: white;
+    text-decoration: none;
+    
+}
+
+div#div-icon-footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60px;
+    position: relative;
+    left: 100px;
+}
+
+.icon-footer {
+    height: 60px;
+    width: 60px;
+    background-color: #222326;
+    margin-left: 10px;
+    border-radius: 30px;
+}
+
+.icon-img {
+    margin: 17px;
+}
+
+div#country {
+    text-align: right;
+    padding: 5px 20px;
+}
+
+
+.info a {
+    color: rgb(177, 177, 179);
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: "Circular-bold";
+}
+
+.info > ul > li {
+    display: inline-block;
+    margin: 0px 10px;
+    
+}
+
+.info > ul {
+    margin-left: 30px;
+    width: 85%;
+    display: inline-block;
+    
+}
+
+span#copy {
+    color: rgb(177, 177, 179);
+    font-size: 0.7em;
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    margin-top: 3px;
+}
+
+@media screen and (max-width: 1230px) {
+    div#div-icon-footer {
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    div#logo-footer {
+        margin-left: 0px;
+    }
+
+    .ul-footer {
+        width: 500px;
+        margin-left: 0px;
+    }
+
+    div#div-icon-footer {
+        left: 0px;
+    }
+
+    .info > ul {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 652px) {
+    .ul-footer {
+        width: 350px;
+        margin-left: 0px;
+    }
+}

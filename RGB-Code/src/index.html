@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Code Gerator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="color">
+            <div class="color-input">
+                <div>
+                    <label for="red">Vermelho-(R)</label>
+                    <span id="num-red">
+                        0
+                    </span>
+                </div>
+                <div>
+                    <input type="range" name="red" id="red"
+                    min="0" max="255"
+                    value="0">
+                    <span class="box-ex"
+                    id="box-red">
+                    </span>
+                </div>
+            </div>
+            <div class="color-input">
+                <div>
+                    <label for="green">Verde-(G)</label>
+                    <span id="num-green">
+                        0
+                    </span>
+                </div>
+                <div>
+                    <input type="range" name="green" id="green" min="0" max="255"
+                    value="0">
+                    <span class="box-ex"
+                    id="box-green">
+                    </span>
+                </div>
+            </div>
+            <div class="color-input">
+                <div>
+                    <label for="blue">Azul-(B)</label>
+                    <span id="num-blue">
+                        0
+                    </span>
+                </div>
+                <div>
+                    <input type="range" name="blue" id="blue" min="0" max="255"
+                    value="0">
+                    <span class="box-ex"
+                    id="box-blue">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div id="box-color">
+
+        </div>
+        <div id="code-color">
+            <div>
+                <label for="#">RGB Code</label>
+                <input id="copy" type="button" value="copiar" onclick="Copy()">
+            </div>
+            <code id="code">
+                rgb(0, 0, 0)
+            </code>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

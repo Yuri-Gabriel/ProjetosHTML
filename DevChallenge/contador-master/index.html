@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Contador
+        Informe uma data
+        DD/MM/AAAA
+        Iniciar contagem
+    -->
+    <header>
+        <h1>Contador</h1>
+        <div>
+            <span>.</span>
+            <button id="RestartBtn">
+                Reiniciar
+            </button>
+        </div>
+    </header>
+    <main>
+        <h1>
+            Faltam
+        </h1>
+        <div>
+            <div>
+                <label for="" id="lblDays">
+                    00
+                </label>
+                <label for="">
+                    Dias
+                </label>
+            </div>
+            <div>
+                <label for="" id="lblHours">
+                    00
+                </label>
+                <label for="">
+                    Horas
+                </label>
+            </div>
+            <div>
+                <label for="" id="lblMinutes">
+                    00
+                </label>
+                <label for="">
+                    Minutos
+                </label>
+            </div>
+            <div>
+                <label for="" id="lblSeconds">
+                    00
+                </label>
+                <label for="">
+                    Segundos
+                </label>
+            </div>
+        </div>
+        <section>
+            <h1>Contador</h1>
+            <h2>Informe uma data</h2>
+            <input type="date" name="" id="dateTimeUser" placeholder="DD/MM/AAAA">
+            <div>
+                <span>.</span>
+                <button id="startCont">
+                    Iniciar contagem
+                </button>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

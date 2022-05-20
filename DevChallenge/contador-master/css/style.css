@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --Green: #21EB00;
+    --Gray: #191A18;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 80px;
+}
+
+header h1 {
+    color: var(--Green);
+}
+
+header div {
+    display: flex;
+    position: relative;
+}
+
+header div span {
+    height: 50px;
+    width: 150px;
+    background-color: #0a4e00;
+    border-radius: 30px;
+}
+
+header button {
+    position: absolute;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    background-color: var(--Green);
+    border: none;
+    border-radius: 30px;
+    color: #000;
+    font-weight: 800;
+    font-size: 1.2em;
+    transition: transform 200ms;
+}
+
+header button:hover {
+    transform: translateY(-5px) translateX(-5px) translateZ(20px);
+}
+
+header button:active {
+    transform: translateY(1px) translateX(1px);
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+main > h1 {
+    color: var(--Gray);
+    font-size: 3.5em;
+    margin-top: -50px;
+}
+
+main > div {
+    display: flex;
+    margin-top: -20px;
+}
+
+main > div div {
+    height: 180px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main > div div label:nth-child(1) {
+    color: #fff;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+main > div div label:nth-child(2) {
+    color: var(--Green);
+    font-size: 1.2em;
+}
+
+section {
+    width: 85vw;
+    height: 400px;
+    position: absolute;
+    top: -60px;
+    background-color: #191A18;
+    border-radius: 20px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.5s;
+}
+
+.active {
+    transform: translateY(120px);
+}
+
+section h1 {
+    color: var(--Green);
+    font-size: 3.5em;
+    margin-top: 80px;
+}
+
+section h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+section input {
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 240px;
+    height: 40px;
+    padding-left: 10px;
+    background-color: #191A18;
+    color: #fff;
+}
+
+section div {
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+}
+
+section div span {
+    width: 250px;
+    height: 40px;
+    background-color: #0a4e00;
+    border-radius: 10px;
+}
+
+section div button {
+    position: absolute;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    cursor: pointer;
+    background-color: var(--Green);
+    border: none;
+    color: #000;
+    font-weight: 800;
+    font-size: 1.2em;
+    transition: transform 300ms;
+}
+
+section div button:hover {
+    transform: translateY(-5px);
+}
+
+section div button:active {
+    transform: translateY(1px);
+}
+
+@media screen and (max-width: 450px) {
+    section {
+        width: 95vw;
+    }
+}

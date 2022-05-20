@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden
+}
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0px 50px;
+    height: 80px;
+    -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.479);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.479)
+}
+
+header h2 {
+    color: #D2872C
+}
+
+header nav {
+    width: 230px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+header nav a {
+    text-decoration: none;
+    color: #766F68
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    font-weight: bold
+}
+
+header img {
+    width: 60px
+}
+
+header #imgMenu {
+    display: none;
+    cursor: pointer
+}
+
+header #imgMenu:hover~#menuBar {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%)
+}
+
+header #menuBar:hover {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%)
+}
+
+header #menuBar {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    display: none;
+    background-color: rgba(158, 101, 32, 0.767);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 2;
+    padding-top: 80px
+}
+
+header #menuBar ul {
+    width: 100%
+}
+
+header #menuBar ul li {
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0;
+    padding: 30px 0px;
+    width: 100%
+}
+
+header #menuBar ul li a {
+    padding-left: 10px;
+    font-weight: 400;
+    color: #ffffff
+}
+
+header #menuBar ul li:hover {
+    background-color: rgba(124, 79, 25, 0.767)
+}
+
+section {
+    margin: auto;
+    margin-top: 20px;
+    padding: 0px 30px;
+    max-width: 850px;
+    height: 400px;
+    color: #766F68;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+section div {
+    height: 400px;
+    position: absolute;
+    z-index: 2
+}
+
+section div h1 {
+    font-size: 3em;
+    max-width: 500px
+}
+
+section div p {
+    font-size: 1.2em;
+    margin: 30px 0px;
+    width: 300px
+}
+
+section div button {
+    border: none;
+    height: 40px;
+    width: 150px;
+    font-size: 1.3em;
+    background-color: #D2872C;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+section div button:hover {
+    background-color: #b97725
+}
+
+section img {
+    position: absolute;
+    z-index: 1;
+    right: 40px;
+    width: 600px
+}
+
+@media screen and (max-width: 900px) {
+    section img {
+        width: 500px
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section img {
+        width: 400px
+    }
+}
+
+@media screen and (max-width: 700px) {
+    section div p {
+        width: 200px
+    }
+}
+
+@media screen and (max-width: 630px) {
+    header #notMenuBar {
+        display: none
+    }
+
+    header #imgMenu,
+    header #menuBar {
+        display: block
+    }
+
+    section {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 550px
+    }
+
+    section div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        z-index: 1
+    }
+
+    section div p {
+        width: 300px
+    }
+
+    section img {
+        position: relative;
+        z-index: 1;
+        right: 0;
+        width: 400px
+    }
+}
+
+/*# sourceMappingURL=style.css.map */

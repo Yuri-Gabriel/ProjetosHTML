@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+    --AzulEscuro: #333853;
+    --AzulClaro: #3C4262;
+    --Verde: #219653;
+    --Amarelo: #F2C94C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    background-color: var(--AzulEscuro);
+    font-family: 'Roboto', sans-serif;
+    color: #A3A6B5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    height: 80px;
+}
+
+header #button {
+    background-color: var(--AzulClaro);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    color: #A3A6B5;
+    font-size: 1.3em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+header #button:hover {
+    transform: translateY(-5px) translateX(-5px);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.685);
+}
+
+header #button:active {
+    transform: translateY(0px) translateX(0px);
+    box-shadow: none;
+}
+
+main {
+    height: calc(100% - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 250px;
+}
+
+main section #backCircle {
+    background-color: var(--AzulClaro);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section #backCircle #circle {
+    border: 3px solid #219653;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section #backCircle #circle label {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+main section #Text {
+    height: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main section #Text h2 {
+    font-size: 2em;
+}
+
+main section #Text #points {
+    width: 150px;
+    height: 50px;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section #Text #points .ball {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin: 0px 2px;
+    background-color: #219653;
+    
+}
+
+main section #Text #points .ball:nth-child(4) {
+    background-color: var(--AzulClaro);
+}
+
+main section #Text button {
+    background-color: var(--AzulClaro);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 80px;
+    height: 70px;
+    border-radius: 10px;
+    color: #A3A6B5;
+    font-size: 1.3em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+main section #Text button:hover {
+    transform: translateY(-5px) translateX(-5px);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.685);
+}
+
+main section #Text button:active {
+    transform: translateY(0px) translateX(0px);
+    box-shadow: none;
+}
+
+main section #Text button label {
+    font-size: 2em;
+    font-weight: 600;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+

@@ -23,7 +23,7 @@ buttonSubmit.addEventListener("click", () => {
         }
         
     }
-    window.location.href = "../pomodoro.html"
+    window.location.href = "pomodoro.html";
 });
 
 ButtonsEvent(buttonsDown, -1);

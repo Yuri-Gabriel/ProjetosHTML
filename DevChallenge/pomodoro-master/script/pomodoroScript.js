@@ -86,7 +86,7 @@ function Time() {
 }
 
 function returnToStart() {
-    window.location.href = "../index.html";
+    window.location.href = "index.html";
 }
 
 function getHTMLElement(selector) {
